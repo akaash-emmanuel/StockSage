@@ -217,7 +217,7 @@ if user_input:
                     }
                 )
                 # sending updated session messages to gpt for further processing
-                second_response = openai.chatcompletion.create(
+                second_response = openai.ChatCompletion.create(
                     model='gpt-3.5-turbo',
                     messages=st.session_state['messages']
                 )
